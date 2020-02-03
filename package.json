@@ -31,10 +31,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/cordova-res.git"
+    "url": "git+https://github.com/nim901/cordova-res.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/cordova-res/issues"
+    "url": "https://github.com/nim901/cordova-res/issues"
   },
   "keywords": [
     "ionic",
