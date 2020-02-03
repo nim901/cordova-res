@@ -128,8 +128,7 @@ async function rasterResourceValidator(type: ResourceType, source: string, pipel
 export const COLOR_REGEX = /^\#[A-F0-9]{6}$/;
 
 export const RASTER_RESOURCE_VALIDATORS: { readonly [T in ResourceType]: ResourceValidator; } = {
-  [ResourceType.ADAPTIVE_ICON]: async (source, pipeline) => 
-  (ResourceType.ADAPTIVE_ICON, source, pipeline, [432, 432]),
+  [ResourceType.ADAPTIVE_ICON]: async (source, pipeline) => rasterResourceValidator(ResourceType.ADAPTIVE_ICON, source, pipeline, [432, 432]),
   [ResourceType.ICON]: async (source, pipeline) => rasterResourceValidator(ResourceType.ICON, source, pipeline, [512, 512]),
   [ResourceType.SPLASH]: async (source, pipeline) => rasterResourceValidator(ResourceType.SPLASH, source, pipeline, [2208, 2208]),
 };
